@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class QuestionsService {
 
-  url: string = 'http://localhost:4200/assets/json/rus.json';
+  url: string = 'https://zmiter-mde.github.io/lernuAngularTest/assets/json/rus.json';
 
   find() {
     return this.http
