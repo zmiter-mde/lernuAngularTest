@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <span>{{ question }}</span>
+  </div>
+  <div class="col-xs-12">
+    <section class="question">
+      <div>{{ currentQuestion.question }}</div>
+      <ul>
+        <li *ngFor="let answer of currentQuestion.answers"
+            (click)="markAnswer(answer)">
+          <span class="mark" [ngStyle]="{background: answer.marked ? 'red' : 'white'}"></span>
+          <span class="answer">{{ answer.text }}</span>
+        </li>
+      </ul>
+      <div>
+        <button type="button" class="btn btn-success">Ответить</button>
+      </div>
+    </section>
+  </div>
+</div>
