@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/Rx';
 
 import 'rxjs/add/operator/map';
 
+import { Question } from '../model/question.model';
+
 @Injectable()
 export class QuestionsService {
 
@@ -12,7 +14,11 @@ export class QuestionsService {
   find() {
     return this.http
                .get(this.url)
-               .map((res:Response) => res.json());
+               .map((res:Response) => {
+                 return res.json().map((question) => {
+                   return Question.from(question);
+                 });
+               });
   }
 
   constructor(private http: Http) { }

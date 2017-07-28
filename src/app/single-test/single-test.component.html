@@ -1,16 +1,21 @@
 <div class="row">
   <div class="col-xs-12">
-    <section class="question">
+    <section class="question" *ngIf="currentQuestion">
       <div>{{ currentQuestion.question }}</div>
       <ul>
-        <li *ngFor="let answer of currentQuestion.answers"
+        <li *ngFor="let answer of currentQuestion.answers; let ind = index;"
             (click)="markAnswer(answer)">
           <span class="mark" [ngStyle]="{background: answer.marked ? 'red' : 'white'}"></span>
           <span class="answer">{{ answer.text }}</span>
+          <i *ngIf="currentQuestion.submitted"
+                style="float: right;"
+                class="glyphicon"
+                [ngClass]="{'glyphicon-ok green-back': answer.truth === answer.marked, 'glyphicon-remove red-back': !answer.truth === answer.marked }">
+          </i>
         </li>
       </ul>
       <div>
-        <button type="button" class="btn btn-success">Ответить</button>
+        <button type="button" class="btn btn-success" (click)="submit()">Ответить</button>
       </div>
     </section>
   </div>

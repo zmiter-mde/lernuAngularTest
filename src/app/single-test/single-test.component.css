@@ -41,3 +41,13 @@ span.mark {
   line-height: 32px;
   vertical-align: middle;
 }
+
+.green-back {
+  background: lightgreen;
+  padding: 2px;
+}
+
+.red-back {
+  background: lightpink;
+  padding: 2px;
+}

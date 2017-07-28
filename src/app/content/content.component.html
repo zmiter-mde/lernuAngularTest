@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <app-single-test></app-single-test>
+      <div class="col-xs-12" *ngIf="questions">
+        <app-single-test *ngFor="let question of questions" [question]="question"></app-single-test>
       </div>
     </div>
   </div>
