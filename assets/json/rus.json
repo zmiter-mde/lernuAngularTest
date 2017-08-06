@@ -10,10 +10,12 @@
           "text": "зн..чение",
           "variants": [
             {
-              "а": true
+              "option":"а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: значимость"
@@ -22,10 +24,12 @@
           "text": "обл..котиться",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: локоть"
@@ -34,10 +38,12 @@
           "text": "д..лина",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: дол"
@@ -46,10 +52,12 @@
           "text": "прод..вец",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: продать"
@@ -58,10 +66,12 @@
           "text": "раск..лить железо",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: накаливание"
@@ -70,10 +80,12 @@
           "text": "м..лчание",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: умолкнуть"
@@ -82,10 +94,12 @@
           "text": "к..пировать статью",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: копия"
@@ -94,10 +108,12 @@
           "text": "зашт..мпованный",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: штамп"
@@ -113,10 +129,12 @@
           "text": "лаб..ратория",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "непроверяемое написание; запомнить"
@@ -125,10 +143,12 @@
           "text": "б..рдовый",
           "variants": [
             {
-              "а": false
+              "option": "а",
+              "truth": false
             },
             {
-              "о": true
+              "option": "о",
+              "truth": true
             }
           ],
           "explanation": "непроверяемое написание; запомнить"
@@ -137,10 +157,12 @@
           "text": "кат..строфа",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "непроверяемое написание; запомнить"
@@ -149,10 +171,12 @@
           "text": "к..блук",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "непроверяемое написание; запомнить"
@@ -168,10 +192,12 @@
           "text": "р..вноденствие",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "пишется а в корне -равн-/-ровн- в значении 'равный, одинаковый, такой же': равноденствие — 'день года, когда продолжительность дня равна ночи'"
@@ -180,10 +206,12 @@
           "text": "ур..внение",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "в корне -равн-/-ровн- в значении 'равный, одинаковый' на месте безударного гласного пишется а"
@@ -199,10 +227,12 @@
           "text": "попл..вок",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "в корне -плав-/-плов- на месте безударного гласного пишется а, кроме слов пловец, пловчиха"
@@ -211,10 +241,12 @@
           "text": "пл..вник",
           "variants": [
             {
-              "а": true
+              "option": "а",
+              "truth": true
             },
             {
-              "о": false
+              "option": "о",
+              "truth": false
             }
           ],
           "explanation": "в корне -плав-/-плов- на месте безударного гласного пишется а, кроме слов пловец, пловчиха"
