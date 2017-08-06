@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import { Observable } from 'rxjs/Rx';
-
-import 'rxjs/add/operator/map';
-
 import { Block } from '../model/block.model';
 
 @Injectable()
@@ -15,9 +11,17 @@ export class BlocksService {
     return this.http
                .get(this.url)
                .map((res:Response) => {
-                 return res.json().map((block) => {
-                   return Block.from(block);
-                 });
+                 let responseObject = res.json();
+                 let blocks : Block[] = [];
+
+                 for (let block of responseObject.blocks) {
+                   blocks.push(Block.from(block));
+                 }
+
+                 return {
+                   level: responseObject.level,
+                   blocks: blocks
+                 };
                });
   }
 

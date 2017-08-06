@@ -12,12 +12,13 @@ import { BlocksService } from '../service/blocks.service';
 export class TestBlocksComponent implements OnInit {
 
   blocks: Block[];
+  level: string;
 
   constructor(private blocksService: BlocksService) {
     this.blocksService.find().subscribe(
       result => {
-        this.blocks = result;
-        console.log(this.blocks);
+        this.level = result.level;
+        this.blocks = result.blocks;
       },
       err => {
         console.log(err);

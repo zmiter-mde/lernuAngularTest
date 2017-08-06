@@ -1,6 +1,5 @@
 .block {
   background: #0FB1E7;
-  border-bottom: 1px solid white;
   padding: 10px;
 }
 
@@ -14,4 +13,8 @@ h3 {
   border: none;
   text-align: left;
   box-shadow: 0 0 25px rgba(0,0,30,.12);
+}
+
+.container {
+  border-bottom: 1px solid white;
 }

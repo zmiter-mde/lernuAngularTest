@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Question } from '../model/question.model';
+import { Task } from '../model/task.model';
 import { Answer } from '../model/answer.model';
 
 @Component({
@@ -11,7 +11,7 @@ import { Answer } from '../model/answer.model';
 export class SingleTestComponent implements OnInit {
 
   @Input('question')
-  currentQuestion: Question;
+  currentQuestion: Task;
 
   markAnswer(answer: Answer) {
     answer.marked = !answer.marked;

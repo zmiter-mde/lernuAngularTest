@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Rx';
 
 import 'rxjs/add/operator/map';
 
-import { Question } from '../model/question.model';
+import { Task } from '../model/task.model';
 
 @Injectable()
 export class QuestionsService {
@@ -16,7 +16,7 @@ export class QuestionsService {
                .get(this.url)
                .map((res:Response) => {
                  return res.json().map((question) => {
-                   return Question.from(question);
+                   //return Question.from(question);
                  });
                });
   }
