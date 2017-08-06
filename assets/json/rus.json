@@ -53,11 +53,11 @@
           "variants": [
             {
               "option": "а",
-              "truth": false
+              "truth": true
             },
             {
               "option": "о",
-              "truth": true
+              "truth": false
             }
           ],
           "explanation": "безударный гласный в корне слова проверяется ударением: продать"
