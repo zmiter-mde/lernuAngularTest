@@ -8,11 +8,7 @@ import { SingleTestComponent } from '../single-test/single-test.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: TestBlocksComponent },
-  { path: 'question',  component: SingleTestComponent }
-  /*,
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes',     component: HeroesComponent }
-  */
+  { path: 'tasks/block/:blockId',  component: SingleTestComponent }
 ];
 
 @NgModule({

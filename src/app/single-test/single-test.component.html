@@ -1,13 +1,20 @@
 <div class="row">
+  <nav class="nav navbar">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <button type="button" class="btn btn-success" (click)="goToLevelledBlocks()">Назад к списку</button>
+      </div>
+    </div>
+  </nav>
   <div class="col-xs-12">
-    <section class="question" *ngIf="currentQuestion">
-      <div>{{ currentQuestion.question }}</div>
+    <section class="question" *ngIf="currentTask">
+      <div>{{ currentTask.text }}</div>
       <ul>
-        <li *ngFor="let answer of currentQuestion.answers; let ind = index;"
+        <li *ngFor="let answer of currentTask.answers;"
             (click)="markAnswer(answer)">
           <span class="mark" [ngStyle]="{background: answer.marked ? 'red' : 'white'}"></span>
-          <span class="answer">{{ answer.text }}</span>
-          <i *ngIf="currentQuestion.submitted"
+          <span class="answer">{{ getOption(currentTask.text, answer.value) }}</span>
+          <i *ngIf="currentTask.submitted"
                 style="float: right;"
                 class="glyphicon"
                 [ngClass]="{'glyphicon-ok green-back': answer.truth === answer.marked, 'glyphicon-remove red-back': !answer.truth === answer.marked }">
@@ -16,6 +23,7 @@
       </ul>
       <div>
         <button type="button" class="btn btn-success" (click)="submit()">Ответить</button>
+        <button *ngIf="currentTask.submitted && nextAvailable()" type="button" class="btn btn-success" (click)="next()">Следующий вопрос</button>
       </div>
     </section>
   </div>

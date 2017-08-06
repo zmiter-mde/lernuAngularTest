@@ -3,7 +3,7 @@
   <div *ngFor="let block of blocks" class="row block">
     <div class="col-xs-12">
       <div class="col-xs-10 col-xs-offset-1 btn btn-primary"
-           routerLink="/question"
+           (click)="goToBlockTasks(block.id)"
            routerLinkActive="active">
         <span>{{ block.title }}</span>
       </div>

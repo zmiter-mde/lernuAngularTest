@@ -8,13 +8,13 @@ export class Block {
                public tasks: Task[]) {}
 
   public static from(obj) {
-    let resultQuestions = [];
-    /*
-    for (let question of obj.questions) {
-      resultQuestions.push(Task.from(question));
+    let resultTasks = [];
+
+    for (let task of obj.tasks) {
+      resultTasks.push(Task.from(task));
     }
-    */
-    return new Block(obj.id, obj.level, obj.title, obj.rule, resultQuestions);
+
+    return new Block(obj.id, obj.level, obj.title, obj.rule, resultTasks);
   }
 
 }

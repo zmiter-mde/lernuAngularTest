@@ -2,17 +2,20 @@ import { Answer } from './answer.model';
 
 export class Task {
 
-  constructor(public answers: Answer[],
+  constructor(public text: string,
+              public answers: Answer[],
+              public explanation: string,
               public submitted: boolean) {
   }
-  /*
+
   public static from(obj) {
-    let resultAnswers = [];
-    for (let plainAnswer of obj.answers) {
-      plainAnswer.marked = false;
-      resultAnswers.push(Answer.from(plainAnswer));
+    let answers: Answer[] = [];
+
+    for (let variant of obj.variants) {
+      answers.push(Answer.from(variant));
     }
-    return new Task(resultAnswers, false);
+
+    return new Task(obj.text, answers, obj.explanation, false);
   }
-  */
+
 }
